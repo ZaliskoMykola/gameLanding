@@ -2,7 +2,7 @@
 .header {
   padding-top: 22px;
   height: 960px;
-  background-image: url(/assets/img/bg-image-1.jpg);
+  background-image: url("../assets/img/bg-image-1.jpg");
   background-size: cover;
   /*налаштувати*/
   background-repeat: no-repeat;
