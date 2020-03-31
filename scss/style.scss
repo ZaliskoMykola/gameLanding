@@ -1,0 +1,78 @@
+.header {
+	padding-top: 22px;
+	height: 960px;
+	background-image: url(/assets/img/bg-image-1.jpg);
+	background-size: cover; /*налаштувати*/
+	background-repeat: no-repeat;
+
+	&-top-row {
+		align-items: center;
+
+		.logo {
+			img {
+				width: 55px;
+				height: 55px;
+			}
+		}
+
+		.menu {
+			margin: 0;
+			display: flex;
+			justify-content: space-between;
+
+			li {
+				list-style: none;
+				color: #ffffff;
+				font-size: 12px;
+				line-height: 16px;
+				text-transform: uppercase;
+
+				a {
+					text-decoration: none;
+					color: #ffffff;
+				}
+			}
+		}
+
+		.langs {
+			position: relative;
+			
+			.langs__btn {
+				font-family: Open Sans;
+				font-weight: bold;
+				font-size: 12px;
+				line-height: 16px;
+				text-transform: uppercase;
+				outline: none;
+				color: #ffffff;
+				background: transparent;
+				border: none;
+
+				.icon {
+					font-size: 10px;
+					color: #ffffff;
+				}
+			}	
+			
+			.langs__dropdown {
+				position: absolute;
+				opacity: 0.7;
+				background: rgba(0, 0, 0, 0.75);
+				border-radius: 3px;
+				display: none;
+			}
+		}
+	}
+	&-middle-row {
+		margin-top: 214px;
+	}
+}
+
+// .decor-line::after{
+// 	padding: 0 20px;
+// 	content: "|";
+// 	// font-size:40px;
+// 	color: #ffffff;
+// 	opacity: 0.4;
+// }
+

@@ -1,0 +1,76 @@
+@charset "UTF-8";
+.header {
+  padding-top: 22px;
+  height: 960px;
+  background-image: url(/assets/img/bg-image-1.jpg);
+  background-size: cover;
+  /*налаштувати*/
+  background-repeat: no-repeat;
+}
+
+.header-top-row {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-top-row .logo img {
+  width: 55px;
+  height: 55px;
+}
+
+.header-top-row .menu {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header-top-row .menu li {
+  list-style: none;
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.header-top-row .menu li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.header-top-row .langs {
+  position: relative;
+}
+
+.header-top-row .langs .langs__btn {
+  font-family: Open Sans;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+  outline: none;
+  color: #ffffff;
+  background: transparent;
+  border: none;
+}
+
+.header-top-row .langs .langs__btn .icon {
+  font-size: 10px;
+  color: #ffffff;
+}
+
+.header-top-row .langs .langs__dropdown {
+  position: absolute;
+  opacity: 0.7;
+  background: rgba(0, 0, 0, 0.75);
+  border-radius: 3px;
+  display: none;
+}
+
+.header-middle-row {
+  margin-top: 214px;
+}
