@@ -1,1 +1,13 @@
-@import url("https://fonts.googleapis.com/css?family=Bebas+Neue|Open+Sans:400,700&display=swap");
+@font-face {
+	font-family:'Bebas Neue';
+	src: url("../assets/fonts/Bebas_Neue/BebasNeue-Regular.ttf"); /* Путь к файлу со шрифтом */
+  }
+  
+@font-face{
+	font-family: 'Open Sans bold';
+	src: url("../assets/fonts/Open_Sans/OpenSans-Bold.ttf");
+}
+@font-face{
+	font-family:"Open Sans regular";
+	src: url("../assets/fonts/Open_Sans/OpenSans-Regular.ttf");
+}
