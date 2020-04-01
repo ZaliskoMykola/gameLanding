@@ -8,7 +8,7 @@ body {
 .header {
 	padding-top: 22px;
 	height: 1050px;
-	background-image: url(/assets/img/bgimage.jpg);
+	background-image: url(../assets/img/bgimage.jpg);
 	background-size: cover;
 	background-position: 0 100%;
 
@@ -224,10 +224,10 @@ body {
 	background: url(../assets/img/bgimage2.jpg);
 	background-size: cover;
 	background-position: 0 100%;
+	padding-top: 255px;
 
 	.galery__block1 {
-		margin-top: 255px;
-		padding-left: 120px;
+		text-align: left;
 
 		.galery__subtitle {
 			color: #ffffff;
@@ -240,7 +240,6 @@ body {
 		}
 
 		.galery__title {
-			text-align: center;
 			color: #ffffff;
 			font-family: $title_font;
 			font-weight: bold;
@@ -259,6 +258,8 @@ body {
 			font-size: $regular_size;
 			line-height: 22px;
 			width: 364px;
+			text-align: center;
+			margin-left: auto;
 		}
 	}
 }
