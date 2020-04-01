@@ -1,7 +1,14 @@
+@import "variables.scss";
+@import "fonts.scss";
+body {
+	font-family: $regular_font;
+	font-size: $regular_size;
+}
+
 .header {
 	padding-top: 22px;
 	height: 960px;
-	background-image: url(/assets/img/bg-image-1.jpg);
+	background-image: url(/assets/img/bgimage.jpg);
 	background-size: cover; /*налаштувати*/
 	background-repeat: no-repeat;
 
@@ -24,6 +31,7 @@
 				list-style: none;
 				color: #ffffff;
 				font-size: 12px;
+				font-family: $bold_font;
 				line-height: 16px;
 				text-transform: uppercase;
 
@@ -36,9 +44,11 @@
 
 		.langs {
 			position: relative;
-			
+			display: flex;
+
 			.langs__btn {
-				font-family: Open Sans;
+				position: relative;
+				font-family: $bold_font;
 				font-weight: bold;
 				font-size: 12px;
 				line-height: 16px;
@@ -47,32 +57,138 @@
 				color: #ffffff;
 				background: transparent;
 				border: none;
+				padding: 0;
+				padding-right: 23px;
+
+				&::after {
+					content: "";
+					display: block;
+					position: absolute;
+					width: 1px;
+					height: 30px;
+					opacity: 0.5;
+					background: #ffffff;
+					right: 0;
+					bottom: 0;
+				}
 
 				.icon {
 					font-size: 10px;
 					color: #ffffff;
+					margin-left: 3px;
 				}
-			}	
-			
-			.langs__dropdown {
+			}
+
+			.langs-dropdown {
+				display: none;
+				padding: 3px 5px 8px;
+				display: flex;
+				flex-direction: column;
+				width: 65px;
 				position: absolute;
 				opacity: 0.7;
 				background: rgba(0, 0, 0, 0.75);
 				border-radius: 3px;
-				display: none;
+				left: -1px;
+				width: 45px;
+				top: 100%;
+
+				.langs-dropdown__btn {
+					text-align: left;
+					height: 20px;
+					font-family: $bold_font;
+					font-weight: bold;
+					font-size: 12px;
+					line-height: 16px;
+					text-transform: uppercase;
+					outline: none;
+					color: #ffffff;
+					background: transparent;
+					border: none;
+					padding: 0;
+				}
+			}
+		}
+		.header-links {
+			margin-left: 25px;
+
+			a {
+				width: 30px;
+				height: 30px;
+				margin-right: 18px;
+				&:last-child {
+					margin-right: 0;
+				}
+
+				img {
+					width: 30px;
+					height: 30px;
+				}
 			}
 		}
 	}
 	&-middle-row {
-		margin-top: 214px;
+		margin: 238px 0 364px;
+		text-align: center; /*!!!!!!!!!!!!!!!*/
+		color: #ffffff;
+
+		.header__title {
+			font-family: $title_font;
+			font-size: $h1_size;
+			font-style: normal;
+			font-weight: bold;
+			margin-bottom: 0;
+			line-height: 80px;
+			letter-spacing: 3px;
+			text-transform: uppercase;
+		}
+
+		.header__subtitle {
+			font-family: $title_font;
+			font-size: $h3_size;
+			letter-spacing: 2px;
+			line-height: 24px;
+			margin-bottom: 24px;
+		}
+		.cta {
+			position: relative;
+			padding: 0;
+			width: 260px;
+			height: 60px;
+			border-radius: 4px;
+			background: $dark_tangerine;
+			outline: none;
+			border: none;
+
+			&__title {
+				position: relative; /*!!!!!!!!!!!!!!!*/
+				font-family: $bold_font;
+				margin-right: 26px;
+				line-height: 22px;
+				color: #1a1917;
+				font-size: $mainButton_size;
+				&::after {
+					display: block;
+					position: absolute;
+					content: "";
+					top: -4px; /*!!!!!!!!!!!!!!!*/
+					left: 165px; /*!!!!!!!!!!!!!!!*/
+					transform: rotate(-20deg); /*!!!!!!!!!!!!!!!*/
+					display: block;
+					width: 2px;
+					height: 30px;
+					opacity: 0.6;
+					background: #1a1917;
+				}
+			}
+
+			&__price {
+				position: relative; /*!!!!!!Ще сказати на великому екрані картинка ріжеться БГ!!!!!!!!!*/
+				font-family: $bold_font;
+				font-size: $mainButton_size;
+				color: #1a1917;
+				line-height: 22px;
+			}
+		}
 	}
 }
-
-// .decor-line::after{
-// 	padding: 0 20px;
-// 	content: "|";
-// 	// font-size:40px;
-// 	color: #ffffff;
-// 	opacity: 0.4;
-// }
-
