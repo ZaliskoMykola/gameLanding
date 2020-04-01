@@ -225,6 +225,40 @@ body {
 	background-size: cover;
 	background-position: 0 100%;
 
-// 	.galery__subtitle {
-// 	}
+	.galery__block1 {
+		margin-top: 255px;
+		padding-left: 120px;
+
+		.galery__subtitle {
+			color: #ffffff;
+			font-family: $title_font;
+			font-size: $h3_size;
+			font-weight: bold;
+			line-height: 24px;
+			letter-spacing: 2px;
+			text-transform: uppercase;
+		}
+
+		.galery__title {
+			text-align: center;
+			color: #ffffff;
+			font-family: $title_font;
+			font-weight: bold;
+			font-size: $h1_size;
+			line-height: 80px;
+			letter-spacing: 3px;
+			text-transform: uppercase;
+		}
+
+		.galery__text {
+			display: flex;
+			justify-content: end;
+			color: #ffffff;
+			// text-align: right;
+			font-family: $regular_font;
+			font-size: $regular_size;
+			line-height: 22px;
+			width: 364px;
+		}
+	}
 }
