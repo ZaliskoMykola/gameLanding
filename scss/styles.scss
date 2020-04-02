@@ -1,328 +1,346 @@
 @import "variables.scss";
 @import "fonts.scss";
+
 body {
-	font-family: $regular_font;
-	font-size: $regular_size;
+  font-family: $regular_font;
+  font-size: $regular_size;
 }
 
 .header {
-	padding-top: 22px;
-	height: 1050px;
-	background-image: url(../assets/img/bgimage.jpg);
-	background-size: cover;
-	background-position: 0 100%;
+  padding-top: 22px;
+  height: 1050px;
+  background-image: url(../assets/img/bgimage.jpg);
+  background-size: cover;
+  background-position: 0 100%;
 
-	&-top-row {
-		align-items: center;
+  &-top-row {
+    align-items: center;
 
-		.logo {
-			img {
-				width: 55px;
-				height: 55px;
-			}
-		}
+    .logo {
+      img {
+        width: 55px;
+        height: 55px;
+      }
+    }
 
-		.menu {
-			margin: 0;
-			display: flex;
-			justify-content: space-between;
+    .menu {
+      margin: 0;
+      display: flex;
+      justify-content: space-between;
 
-			li {
-				list-style: none;
-				color: #ffffff;
-				font-size: 12px;
-				font-family: $bold_font;
-				line-height: 16px;
-				text-transform: uppercase;
+      li {
+        list-style: none;
+        color: #ffffff;
+        font-size: 12px;
+        font-family: $bold_font;
+        line-height: 16px;
+        text-transform: uppercase;
 
-				a {
-					text-decoration: none;
-					color: #ffffff;
-				}
-			}
-		}
+        a {
+          text-decoration: none;
+          color: #ffffff;
+        }
+      }
+    }
 
-		.langs {
-			position: relative;
-			display: flex;
+    .langs {
+      position: relative;
+      display: flex;
 
-			.langs__btn {
-				position: relative;
-				font-family: $bold_font;
-				font-weight: bold;
-				font-size: 12px;
-				line-height: 16px;
-				text-transform: uppercase;
-				outline: none;
-				color: #ffffff;
-				background: transparent;
-				border: none;
-				padding: 0;
-				padding-right: 23px;
+      .langs__btn {
+        position: relative;
+        font-family: $bold_font;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 16px;
+        text-transform: uppercase;
+        outline: none;
+        color: #ffffff;
+        background: transparent;
+        border: none;
+        padding: 0;
+        padding-right: 23px;
 
-				&::after {
-					content: "";
-					display: block;
-					position: absolute;
-					width: 1px;
-					height: 30px;
-					opacity: 0.5;
-					background: #ffffff;
-					right: 0;
-					bottom: 0;
-				}
+        &::after {
+          content: "";
+          display: block;
+          position: absolute;
+          width: 1px;
+          height: 30px;
+          opacity: 0.5;
+          background: #ffffff;
+          right: 0;
+          bottom: 0;
+        }
 
-				.icon {
-					font-size: 10px;
-					color: #ffffff;
-					margin-left: 3px;
-				}
-			}
+        .icon {
+          font-size: 10px;
+          color: #ffffff;
+          margin-left: 3px;
+        }
+      }
 
-			.langs-dropdown {
-				display: none;
-				padding: 3px 5px 8px;
-				display: flex;
-				flex-direction: column;
-				width: 65px;
-				position: absolute;
-				opacity: 0.7;
-				background: rgba(0, 0, 0, 0.75);
-				border-radius: 3px;
-				left: -1px;
-				width: 45px;
-				top: 100%;
+      .langs-dropdown {
+        display: none;
+        padding: 3px 5px 8px;
+        display: flex;
+        flex-direction: column;
+        width: 65px;
+        position: absolute;
+        opacity: 0.7;
+        background: rgba(0, 0, 0, 0.75);
+        border-radius: 3px;
+        left: -1px;
+        width: 45px;
+        top: 100%;
 
-				.langs-dropdown__btn {
-					text-align: left;
-					height: 20px;
-					font-family: $bold_font;
-					font-weight: bold;
-					font-size: 12px;
-					line-height: 16px;
-					text-transform: uppercase;
-					outline: none;
-					color: #ffffff;
-					background: transparent;
-					border: none;
-					padding: 0;
-				}
-			}
-		}
-		.header-links {
-			margin-left: 25px;
+        .langs-dropdown__btn {
+          text-align: left;
+          height: 20px;
+          font-family: $bold_font;
+          font-weight: bold;
+          font-size: 12px;
+          line-height: 16px;
+          text-transform: uppercase;
+          outline: none;
+          color: #ffffff;
+          background: transparent;
+          border: none;
+          padding: 0;
+        }
+      }
+    }
 
-			a {
-				width: 30px;
-				height: 30px;
-				margin-right: 18px;
-				&:last-child {
-					margin-right: 0;
-				}
+    .header-links {
+      margin-left: 25px;
 
-				img {
-					width: 30px;
-					height: 30px;
-				}
-			}
-		}
-	}
-	&-middle-row {
-		margin: 238px 0 364px;
-		text-align: center; /*!!!!!!!!!!!!!!!*/
-		color: #ffffff;
+      a {
+        width: 30px;
+        height: 30px;
+        margin-right: 18px;
 
-		.header__title {
-			font-family: $title_font;
-			font-size: $h1_size;
-			font-style: normal;
-			font-weight: bold;
-			margin-bottom: 0;
-			line-height: 80px;
-			letter-spacing: 3px;
-			text-transform: uppercase;
-		}
+        &:last-child {
+          margin-right: 0;
+        }
 
-		.header__subtitle {
-			font-family: $title_font;
-			font-size: $h3_size;
-			letter-spacing: 2px;
-			line-height: 24px;
-			margin-bottom: 24px;
-		}
-		.cta {
-			position: relative;
-			padding: 0;
-			width: 260px;
-			height: 60px;
-			border-radius: 4px;
-			background: $dark_tangerine;
-			outline: none;
-			border: none;
+        img {
+          width: 30px;
+          height: 30px;
+        }
+      }
+    }
+  }
 
-			&__title {
-				position: relative; /*!!!!!!!!!!!!!!!*/
-				font-family: $bold_font;
-				margin-right: 26px;
-				line-height: 22px;
-				color: #1a1917;
-				font-size: $mainButton_size;
-				&::after {
-					display: block;
-					position: absolute;
-					content: "";
-					top: -4px; /*!!!!!!!!!!!!!!!*/
-					left: 165px; /*!!!!!!!!!!!!!!!*/
-					transform: rotate(-20deg); /*!!!!!!!!!!!!!!!*/
-					display: block;
-					width: 2px;
-					height: 30px;
-					opacity: 0.6;
-					background: #1a1917;
-				}
-			}
+  &-middle-row {
+    margin: 238px 0 364px;
+    text-align: center; /*!!!!!!!!!!!!!!!*/
+    color: #ffffff;
 
-			&__price {
-				position: relative; /*!!!!!!Ще сказати на великому екрані картинка ріжеться БГ!!!!!!!!!*/
-				font-family: $bold_font;
-				font-size: $mainButton_size;
-				color: #1a1917;
-				line-height: 22px;
-			}
-		}
-	}
-	.header-bottom-row {
-		text-align: center;
-		margin-bottom: 60px;
+    .header__title {
+      font-family: $title_font;
+      font-size: $h1_size;
+      font-style: normal;
+      font-weight: bold;
+      margin-bottom: 0;
+      line-height: 80px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
 
-		.story-btn {
-			width: 100%;
-			height: 25px;
-			border: none;
-			background: none;
-			outline: none;
+    .header__subtitle {
+      font-family: $title_font;
+      font-size: $h3_size;
+      letter-spacing: 2px;
+      line-height: 24px;
+      margin-bottom: 24px;
+    }
 
-			.story-btn__text {
-				font-family: $bold_font;
-				font-size: $nav_size;
-				text-transform: uppercase;
-				line-height: 22px;
-				text-align: justify;
-				text-align: center;
-				color: #ffffff;
-			}
+    .cta {
+      position: relative;
+      padding: 0;
+      width: 260px;
+      height: 60px;
+      border-radius: 4px;
+      background: $dark_tangerine;
+      outline: none;
+      border: none;
 
-			.story-btn__down {
-				color: #ffffff;
-			}
-		}
-	}
+      &__title {
+        position: relative; /*!!!!!!!!!!!!!!!*/
+        font-family: $bold_font;
+        margin-right: 26px;
+        line-height: 22px;
+        color: #1a1917;
+        font-size: $mainButton_size;
+
+        &::after {
+          display: block;
+          position: absolute;
+          content: "";
+          top: -4px; /*!!!!!!!!!!!!!!!*/
+          left: 165px; /*!!!!!!!!!!!!!!!*/
+          transform: rotate(-20deg); /*!!!!!!!!!!!!!!!*/
+          display: block;
+          width: 2px;
+          height: 30px;
+          opacity: 0.6;
+          background: #1a1917;
+        }
+      }
+
+      &__price {
+        position: relative; /*!!!!!!Ще сказати на великому екрані картинка ріжеться БГ!!!!!!!!!*/
+        font-family: $bold_font;
+        font-size: $mainButton_size;
+        color: #1a1917;
+        line-height: 22px;
+      }
+    }
+  }
+
+  .header-bottom-row {
+    text-align: center;
+    margin-bottom: 60px;
+
+    .story-btn {
+      width: 100%;
+      height: 25px;
+      border: none;
+      background: none;
+      outline: none;
+
+      .story-btn__text {
+        font-family: $bold_font;
+        font-size: $nav_size;
+        text-transform: uppercase;
+        line-height: 22px;
+        text-align: justify;
+        text-align: center;
+        color: #ffffff;
+      }
+
+      .story-btn__down {
+        color: #ffffff;
+      }
+    }
+  }
 }
 
-.galery {
-	height: 1050px;
-	background: url(../assets/img/bgimage2.jpg);
-	background-size: cover;
-	background-position: 0 100%;
-	// padding-top: 255px;
+.about {
+  height: 1050px;
+  background-size: cover;
+  background: url(../assets/img/bgimage2.jpg) 0 100%;
 
-	.galery__block1 {
-		text-align: left;
-		padding-top: 255px;
+  &-row {
+    margin-top: 185px;
+  }
 
-		.galery__subtitle {
-			color: #ffffff;
-			font-family: $title_font;
-			font-size: $h3_size;
-			font-weight: bold;
-			line-height: 24px;
-			letter-spacing: 2px;
-			text-transform: uppercase;
-		}
+  &__block-left {
+    text-align: left;
+    padding-top: 70px;
 
-		.galery__title {
-			color: #ffffff;
-			font-family: $title_font;
-			font-weight: bold;
-			font-size: $h1_size;
-			line-height: 80px;
-			letter-spacing: 3px;
-			text-transform: uppercase;
+    &__subtitle {
+      color: #ffffff;
+      font-family: $title_font;
+      font-size: $h3_size;
+      font-weight: bold;
+      line-height: 24px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
 
-			&::after {
-				content: "";
-				display: block;
-				position: absolute;
-				border-radius: 4px;
-				height: 3px;
-				width: 711px;
-				z-index: 20;
-				background: #ffffff;
-			}
-		}
+    &__title {
+      color: #ffffff;
+      font-family: $title_font;
+      font-weight: bold;
+      font-size: $h1_size;
+      line-height: 80px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
 
-		.galery__text {
-			color: #ffffffa1;
-			font-family: $regular_font;
-			font-size: $regular_size;
-			line-height: 22px;
-			width: 364px;
-			height: 174px;
-			text-align: justify;
-			margin-left: auto;
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        border-radius: 4px;
+        height: 3px;
+        width: 711px;
+        z-index: 20;
+        background: #ffffff;
+      }
+    }
 
-			&--snow {
-				color: #ffffff;
-			}
+    &__text {
+      color: #ffffffa1;
+      font-family: $regular_font;
+      font-size: $regular_size;
+      line-height: 22px;
+      width: 364px;
+      height: 174px;
+      text-align: justify;
+      margin-left: auto;
 
-			&::after {
-				height: 4px;
-				content: "";
-				background: $dark_tangerine;
-				display: block;
-				width: 118px;
-				margin-left: 78px;
-			}
-		}
-	}
+      &--snow {
+        color: #ffffff;
+      }
 
-	.galery__block2 {
-		padding-top: 185px;
+      &::after {
+        height: 4px;
+        content: "";
+        background: $dark_tangerine;
+        display: block;
+        width: 118px;
+        margin-left: 78px;
+      }
+    }
+  }
 
-		&--image1 {
-			position: absolute;
-			z-index: 3;
-			border-radius: 7px;
-			background-size: cover;
-			background-position: 0 100%;
-		}
+  &__block-right {
 
-		&--image2 {
-			position: absolute;
-			top: 210px;
-			left: 110px;
-			z-index: 2;
-			border-radius: 7px;
-			background-size: cover;
-			background-position: 0 100%;
-		}
+    .gallery {
+      &-content {
+        &__image1 {
+          position: absolute;
+          z-index: 3;
+          border-radius: 7px;
+          background-size: cover;
+          background-position: 0 100%;
+        }
 
-		&--image3 {
-			left: 140px;
-			top: 240px;
-			z-index: 1;
-			position: absolute;
-			border-radius: 7px;
-			background-size: cover;
-			background-position: 0 100%;
-		}
-	}
-	.galery__block3 {
-		&--arrow {
-			position: absolute;
-			top: 480px;
-			left: 120px;
-			color: #ffff;
-		}
-	}
+        &__image2 {
+          position: absolute;
+          top: 210px;
+          left: 110px;
+          z-index: 2;
+          border-radius: 7px;
+          background-size: cover;
+          background-position: 0 100%;
+        }
+
+        &__image3 {
+          left: 140px;
+          top: 240px;
+          z-index: 1;
+          position: absolute;
+          border-radius: 7px;
+          background-size: cover;
+          background-position: 0 100%;
+        }
+      }
+
+      &-navigation {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        transform: translateY(-50%);
+        display: flex;
+        justify-content: space-between;
+
+        &__arrow {
+          color: #ffff;
+        }
+      }
+    }
+  }
 }
