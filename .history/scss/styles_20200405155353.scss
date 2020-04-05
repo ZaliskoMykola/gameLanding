@@ -219,6 +219,10 @@ body {
 				text-align: center;
 				color: #ffffff;
 			}
+
+			.story-btn__down {
+				color: #ffffff;
+			}
 		}
 	}
 }
@@ -334,7 +338,11 @@ body {
 				position: absolute;
 				bottom: 50%;
 				transform: translateY(50%);
-				cursor: pointer;
+
+				&__arrow {
+					color: #ffffff;
+					font-size: 28px;
+				}
 			}
 		}
 	}
