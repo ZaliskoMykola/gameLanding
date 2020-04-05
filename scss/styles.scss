@@ -8,12 +8,12 @@ body {
 
 .header {
 	padding-top: 22px;
-	height: 1050px;
+	height: 960px;
 	background-image: url("../assets/img/bgimage1.png");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: 0 100%;
-	margin-bottom: -2px; /*!!!!*/
+	margin-bottom: -2px;
 	&-top-row {
 		align-items: center;
 
@@ -134,7 +134,7 @@ body {
 
 	&-middle-row {
 		margin: 238px 0 364px;
-		text-align: center; /*!!!!!!!!!!!!!!!*/
+		text-align: center;
 		color: #ffffff;
 
 		.header__title {
@@ -167,7 +167,7 @@ body {
 			border: none;
 
 			&__title {
-				position: relative; /*!!!!!!!!!!!!!!!*/
+				position: relative;
 				font-family: $bold_font;
 				margin-right: 26px;
 				line-height: 22px;
@@ -178,9 +178,9 @@ body {
 					display: block;
 					position: absolute;
 					content: "";
-					top: -4px; /*!!!!!!!!!!!!!!!*/
-					left: 165px; /*!!!!!!!!!!!!!!!*/
-					transform: rotate(-20deg); /*!!!!!!!!!!!!!!!*/
+					top: -4px;
+					left: 165px;
+					transform: rotate(-20deg);
 					display: block;
 					width: 2px;
 					height: 30px;
@@ -190,7 +190,7 @@ body {
 			}
 
 			&__price {
-				position: relative; /*!!!!!!Ще сказати на великому екрані картинка ріжеться БГ!!!!!!!!!*/
+				position: relative;
 				font-family: $bold_font;
 				font-size: $mainButton_size;
 				color: #1a1917;
@@ -228,7 +228,7 @@ body {
 	height: 1050px;
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: top;
+	background-position: 0 100%;
 
 	padding-top: 190px;
 
@@ -338,4 +338,14 @@ body {
 			}
 		}
 	}
+}
+
+.features {
+	background: url("../assets/img/bg3.png");
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 870px;
+	padding-top: 170px;
+	margin-left: 800px;
 }
