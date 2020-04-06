@@ -4,6 +4,7 @@
 body {
 	font-family: $regular_font;
 	font-size: $regular_size;
+	box-sizing: border-box;
 }
 
 .header {
@@ -243,9 +244,11 @@ body {
 				line-height: 24px;
 				letter-spacing: 2px;
 				font-size: $h3_size;
+				font-weight: bold;
 			}
 
 			&--bot {
+				font-weight: bold;
 				letter-spacing: 3px;
 				line-height: 80px;
 				font-size: $h1_size;
@@ -342,10 +345,66 @@ body {
 
 .features {
 	background: url("../assets/img/bg3.png");
-	background-position: top;
+	background-position: 0 100%;
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 870px;
 	padding-top: 170px;
-	margin-left: 800px;
+
+	&-content {
+		padding: 0;
+		margin-left: 750px;
+
+		.features-title__text {
+			color: #ffffff;
+			text-transform: uppercase;
+			font-family: $title_font;
+
+			&--top {
+				font-size: $h3_size;
+				line-height: 24px;
+				letter-spacing: 2px;
+				font-weight: bold;
+			}
+
+			&--bot {
+				font-size: $h1_size;
+				line-height: 80px;
+				letter-spacing: 3px;
+			}
+		}
+
+		.features-menu {
+			position: relative;
+			&-item {
+				margin-bottom: 30px;
+				&__title {
+					color: #ffb548;
+					text-align: center;
+
+					font-family: $title_font;
+					font-size: $h2_size;
+					letter-spacing: 2px;
+					cursor: pointer;
+					&:hover ~ .features-menu-item__text {
+						
+						color: red;
+					}
+				}
+
+				&__text {
+					display: block;
+					top: -30px;
+					position: absolute;
+					margin-left: 55px;
+					font-family: $regular_font;
+					color: rgba(255, 255, 255, 0.596);
+					width: 360px;
+					font-size: 18px;
+					line-height: 22px;
+					text-align: justify;
+				}
+			}
+		}
+	}
 }
