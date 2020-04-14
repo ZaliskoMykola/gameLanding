@@ -385,7 +385,7 @@ body {
 		}
 
 		.features-menu {
-			position: absolute;
+			position: relative;
 			margin-top: 70px;
 			padding-left: 45px;
 
@@ -393,7 +393,7 @@ body {
 				height: 140px;
 				width: 370px;
 				&__title {
-					position: relative;
+					position: absolute;
 					font-family: $title_font;
 					font-weight: bold;
 					font-size: $h2_size;
@@ -402,17 +402,21 @@ body {
 					color: $dark_tangerine;
 					cursor: pointer;
 					&:hover ~ .features-menu-item__text--active {
-						color: red;
+						display: block;
+						top: 0;
 					}
 				}
 
 				&__text {
+					display: none;
+					top: -50px;
+					position: absolute;
 					color: #ffffff;
 					font-family: $regular_font;
 					font-weight: normal;
 					text-align: justify;
 					font-size: $regular_size;
-					margin-bottom: 30px;
+					// margin-bottom: 30px;
 					transition: 0.3s;
 				}
 			}
