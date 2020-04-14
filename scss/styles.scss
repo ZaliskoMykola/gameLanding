@@ -14,7 +14,7 @@ body {
 	padding-top: 22px;
 	height: 960px;
 	background-image: url("../assets/img/bgimage1.png");
-	background-size: 1440px;
+	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	background-position: top;
 
@@ -225,8 +225,8 @@ body {
 }
 
 .about {
-	background-size: 1440px;
 	background: url("../assets/img/bgimage2.png") no-repeat top;
+	background-size: 100% 100%;
 	padding-top: 190px;
 	padding-bottom: 230px;
 
@@ -343,7 +343,7 @@ body {
 .features {
 	background-image: url("../assets/img/bg3.png");
 	height: 870px;
-	background-size: 1440px;
+	background-size: 100% 100%;
 	background-position: top;
 	background-repeat: no-repeat;
 
