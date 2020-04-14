@@ -87,11 +87,9 @@ body {
 			}
 
 			.langs-dropdown {
-				display: none;
 				padding: 3px 5px 8px;
 				display: flex;
 				flex-direction: column;
-				width: 65px;
 				position: absolute;
 				opacity: 0.7;
 				background: rgba(0, 0, 0, 0.75);
@@ -220,7 +218,6 @@ body {
 				font-size: $nav_size;
 				text-transform: uppercase;
 				line-height: 22px;
-				text-align: justify;
 				text-align: center;
 				color: #ffffff;
 			}
@@ -229,12 +226,10 @@ body {
 }
 
 .about {
-	background: url("../assets/img/bgimage2.png");
 	height: 1050px;
 	background-size: 1440px;
 	margin: auto;
-	background-repeat: no-repeat;
-	background-position: top;
+	background: url("../assets/img/bgimage2.png") no-repeat top;
 	padding-top: 190px;
 
 	.description-left {
@@ -385,15 +380,14 @@ body {
 		}
 
 		.features-menu {
-			position: absolute;
 			margin-top: 70px;
 			padding-left: 45px;
 
 			&-item {
-				height: 140px;
+				margin-bottom: 15px;
 				width: 370px;
+
 				&__title {
-					position: relative;
 					font-family: $title_font;
 					font-weight: bold;
 					font-size: $h2_size;
@@ -401,8 +395,9 @@ body {
 					line-height: 36px;
 					color: $dark_tangerine;
 					cursor: pointer;
-					&:hover ~ .features-menu-item__text--active {
+					&:hover ~ .features-menu-item__text {
 						color: red;
+						display: block;
 					}
 				}
 
@@ -414,6 +409,7 @@ body {
 					font-size: $regular_size;
 					margin-bottom: 30px;
 					transition: 0.3s;
+					display: none;
 				}
 			}
 		}
