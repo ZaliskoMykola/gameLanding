@@ -1,0 +1,27 @@
+%tpl-h1 {
+	font-weight: bold;
+	margin-top: 10px;
+	font-size: $h1_size;
+	line-height: 80px;
+	letter-spacing: 3px;
+	color: #ffffff;
+	text-transform: uppercase;
+	font-family: $title_font;
+}
+%tpl-h3{
+	color: #ffffff;
+	text-transform: uppercase;
+	font-family: $title_font;
+	line-height: 24px;
+	letter-spacing: 2px;
+	font-weight: bold;
+	font-size: $h3_size;
+}
+
+%regular-text{
+	font-size: $regular_size;
+	font-style: normal;
+	line-height: 22px;
+	color: #ffffff;
+	font-family: $regular_font;
+}

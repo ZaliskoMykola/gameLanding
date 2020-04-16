@@ -1,5 +1,7 @@
 @import "variables.scss";
 @import "fonts.scss";
+@import "template.scss";
+
 * {
 	margin: 0;
 	padding: 0;
@@ -140,22 +142,11 @@ body {
 		color: #ffffff;
 
 		.header__title {
-			font-family: $title_font;
-			font-size: $h1_size;
-			font-style: normal;
-			font-weight: bold;
-			margin-bottom: 0;
-			line-height: 80px;
-			letter-spacing: 3px;
-			text-transform: uppercase;
+			@extend %tpl-h1;
 		}
 
 		.header__subtitle {
-			font-family: $title_font;
-			font-size: $h3_size;
-			letter-spacing: 2px;
-			line-height: 24px;
-			margin-bottom: 24px;
+			@extend %tpl-h3;
 		}
 
 		.cta {
@@ -233,22 +224,12 @@ body {
 	.description-left {
 		padding-top: 65px;
 		&__title {
-			font-family: $title_font;
-			color: #ffffff;
-			text-transform: uppercase;
-
 			&--top {
-				line-height: 24px;
-				letter-spacing: 2px;
-				font-size: $h3_size;
-				font-weight: bold;
+				@extend %tpl-h3;
 			}
 
 			&--bot {
-				font-weight: bold;
-				letter-spacing: 3px;
-				line-height: 80px;
-				font-size: $h1_size;
+				@extend %tpl-h1;
 
 				&::after {
 					content: "";
@@ -358,22 +339,11 @@ body {
 		margin-top: 190px;
 
 		.features-title {
-			color: #ffffff;
-			text-transform: uppercase;
-			font-family: $title_font;
-
 			&__text--top {
-				line-height: 24px;
-				letter-spacing: 2px;
-				font-weight: bold;
-				font-size: $h3_size;
+				@extend %tpl-h3;
 			}
 			&__text--bot {
-				font-weight: bold;
-				margin-top: 10px;
-				font-size: $h1_size;
-				line-height: 80px;
-				letter-spacing: 3px;
+				@extend %tpl-h1;
 			}
 		}
 
@@ -407,6 +377,61 @@ body {
 					margin-bottom: 30px;
 					transition: 0.3s;
 					display: none;
+				}
+			}
+		}
+	}
+}
+
+.system-requirements {
+	background: url("/assets/img/bg04.png");
+	height: 960px;
+	background-size: 100% 100%;
+	background-position: top;
+	background-repeat: no-repeat;
+
+	.heading {
+		text-align: center;
+		padding-top: 180px;
+
+		&__text {
+			@extend %tpl-h3;
+		}
+
+		&__title {
+			@extend %tpl-h1;
+		}
+	}
+
+	.table {
+		height: 400px;
+		width: 573px;
+		display: flex;
+		flex-wrap: wrap;
+		padding-top: 130px;
+
+		&__item {
+			height: 125px;
+			width: 50%;
+			border: 1px solid #979797;
+
+			&--full {
+				height: 150px;
+				width: 100%;
+			}
+
+			.descr {
+				padding-left: 20px;
+				padding-top: 15px;
+				padding-bottom: 30px;
+
+				&__title {
+					@extend %tpl-h3;
+					color: #ffb548;
+					padding-bottom: 10px;
+				}
+				&__text {
+					@extend %regular-text;
 				}
 			}
 		}
