@@ -485,24 +485,39 @@ body {
 	}
 
 	.block-right {
-		padding-top: 160px;
+		margin-top: 200px;
+		margin-left: 80px;
 
 		.cards-item {
+			position: relative;
 			display: flex;
 			flex-wrap: wrap;
-			margin-bottom: 30px;
+			margin-bottom: 50px;
 			width: 453px;
-			height: 182px;
 			background-color: rgba(255, 255, 255, 0.08);
 			border-radius: 10px;
+			&:nth-child(2) {
+				left: -20%;
+			}
 
 			.image {
+				position: relative;
 				padding: 15px 30px;
+				background: $dark_tangerine;
+				border-radius: 50%;
+				height: 64px;
+				width: 64px;
+				margin-right: 40px;
+				top: 15px;
+				left: 20px;
 
 				&__user-foto {
+					position: absolute;
 					width: 64px;
 					height: 64px;
-					border-radius: 100px;
+					border-radius: 50%;
+					right: 5px;
+					bottom: 5px;
 				}
 			}
 
@@ -521,7 +536,18 @@ body {
 			}
 
 			.social {
-				padding: 30px 20px;
+				padding: 30px 0px;
+				margin-left: 50px;
+				cursor: pointer;
+
+				&__icon {
+					color: #ffffff;
+					opacity: 0.3;
+					&:hover {
+						color: #4fa1ff;
+						opacity: 1;
+					}
+				}
 			}
 
 			.comment {
