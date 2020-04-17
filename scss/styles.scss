@@ -322,7 +322,7 @@ body {
 }
 
 .features {
-	background-image: url("../assets/img/bg3.png");
+	background-image: url("../assets/img/bg32.png");
 	height: 870px;
 	background-size: 100% 100%;
 	background-position: top;
@@ -384,7 +384,7 @@ body {
 }
 
 .system-requirements {
-	background: url("/assets/img/bg04.png");
+	background: url("../assets/img/bg04.png");
 	height: 960px;
 	background-size: 100% 100%;
 	background-position: top;
@@ -485,7 +485,6 @@ body {
 	}
 
 	.block-right {
-		position: relative;
 		padding-top: 160px;
 
 		.cards-item {
@@ -496,8 +495,6 @@ body {
 			height: 182px;
 			background-color: rgba(255, 255, 255, 0.08);
 			border-radius: 10px;
-
-			
 
 			.image {
 				padding: 15px 30px;
