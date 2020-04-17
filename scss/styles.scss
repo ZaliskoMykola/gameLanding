@@ -437,3 +437,112 @@ body {
 		}
 	}
 }
+
+.quotes {
+	background-color: #000;
+	height: 960px;
+	background-size: 100% 100%;
+	background-position: top;
+	background-repeat: no-repeat;
+
+	.block-left {
+		padding-top: 300px;
+
+		.descr {
+			&__subtitle {
+				@extend %tpl-h3;
+			}
+
+			&__title {
+				@extend %tpl-h1;
+			}
+
+			&__text {
+				@extend %regular-text;
+				padding-top: 50px;
+				text-align: justify;
+				width: 430px;
+			}
+		}
+
+		.cta {
+			margin-top: 60px;
+			width: 260px;
+			height: 60px;
+			border-radius: 4px;
+			background: $dark_tangerine;
+			outline: none;
+			border: none;
+			text-align: center;
+
+			&__title {
+				font-family: "Open Sans bold";
+				line-height: 22px;
+				color: #1a1917;
+				font-size: 16px;
+			}
+		}
+	}
+
+	.block-right {
+		position: relative;
+		padding-top: 160px;
+
+		.cards-item {
+			display: flex;
+			flex-wrap: wrap;
+			margin-bottom: 30px;
+			width: 453px;
+			height: 182px;
+			background-color: rgba(255, 255, 255, 0.08);
+			border-radius: 10px;
+
+			
+
+			.image {
+				padding: 15px 30px;
+
+				&__user-foto {
+					width: 64px;
+					height: 64px;
+					border-radius: 100px;
+				}
+			}
+
+			.descr-user {
+				width: 260px;
+				padding: 26px 40px 0px 0px;
+
+				&__user-name {
+					@extend %tpl-h3;
+					color: $dark_tangerine;
+				}
+				&__user-hobby {
+					@extend %regular-text;
+					opacity: 0.5;
+				}
+			}
+
+			.social {
+				padding: 30px 20px;
+			}
+
+			.comment {
+				&__subscr {
+					text-align: justify;
+					padding: 0px 50px 15px 20px;
+					@extend %regular-text;
+				}
+
+				&__date {
+					padding: 0 0 10px 20px;
+					opacity: 0.5;
+					font-size: $subtext_size;
+					line-height: 19px;
+					color: #ffffff;
+					font-family: $regular_font;
+				}
+			}
+		}
+	}
+}

@@ -8,7 +8,8 @@
 	text-transform: uppercase;
 	font-family: $title_font;
 }
-%tpl-h3{
+%tpl-h3 {
+	font-style: normal;
 	color: #ffffff;
 	text-transform: uppercase;
 	font-family: $title_font;
@@ -18,7 +19,7 @@
 	font-size: $h3_size;
 }
 
-%regular-text{
+%regular-text {
 	font-size: $regular_size;
 	font-style: normal;
 	line-height: 22px;
