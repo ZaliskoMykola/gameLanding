@@ -569,3 +569,85 @@ body {
 		}
 	}
 }
+
+.subscribe {
+	background-color: #000;
+	height: 960px;
+	background-size: 100% 100%;
+	background-position: top;
+	background-repeat: no-repeat;
+
+	.image {
+		margin-top: 50px;
+	}
+
+	.descr {
+		display: flex;
+		flex-direction: column;
+		padding-left: 70px;
+
+		&__subtext {
+			padding-top: 220px;
+			@extend %tpl-h3;
+		}
+
+		&__title {
+			@extend %tpl-h1;
+		}
+
+		&__text {
+			margin: 45px 0;
+			@extend %regular-text;
+		}
+		.wrap {
+			display: flex;
+			justify-content: space-between;
+
+			.mail {
+				padding: 5px 20px;
+				width: 370px;
+				height: 60px;
+				background: rgba(255, 255, 255, 0.08);
+				border-radius: 5px;
+				display: flex;
+				flex-direction: column;
+
+				&__label {
+					font-family: $regular_font;
+					font-size: $subtext_size;
+					opacity: 0.5;
+					color: #ffffff;
+					line-height: 19px;
+				}
+
+				&__adres {
+					cursor: pointer;
+					outline: none;
+					font-size: $regular_size;
+					background: initial;
+					border: none;
+					color: $dark_tangerine;
+					line-height: 25px;
+
+					font-family: $regular_font;
+				}
+			}
+
+			.subsc-btn {
+				width: 260px;
+				height: 60px;
+				border-radius: 4px;
+				background: $dark_tangerine;
+				outline: none;
+				border: none;
+				text-align: center;
+				&__text {
+					font-family: "Open Sans bold";
+					line-height: 22px;
+					color: #1a1917;
+					font-size: 16px;
+				}
+			}
+		}
+	}
+}
