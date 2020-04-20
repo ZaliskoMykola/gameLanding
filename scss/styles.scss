@@ -384,11 +384,9 @@ body {
 }
 
 .system-requirements {
-	background: url("../assets/img/bg04.png");
 	height: 960px;
+	background: url("../assets/img/bg04.png") no-repeat top;
 	background-size: 100% 100%;
-	background-position: top;
-	background-repeat: no-repeat;
 
 	.heading {
 		text-align: center;
