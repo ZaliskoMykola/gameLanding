@@ -85,14 +85,18 @@
 				</div>
 				<div class="col-6 description-right">
 					<div class="gallery">
-						<div class="gallery-content">
+						<!-- <div class="gallery-content">
 							<img class="gallery-content__img gallery-content__img--img1" src="./assets/img/gallery1.png" alt="">
 							<img class="gallery-content__img gallery-content__img--img2" src="./assets/img/gallery2.png" alt="">
 							<img class="gallery-content__img gallery-content__img--img3" src="./assets/img/gallery3.png" alt="">
-
+						</div> -->
+						<div class="gallery-content">
+							<img class="gallery-content__img gallery-content__img--active" src="./assets/img/gallery1.png" alt="">
+							<img class="gallery-content__img gallery-content__img" src="./assets/img/gallery2.png" alt="">
+							<img class="gallery-content__img gallery-content__img" src="./assets/img/gallery3.png" alt="">
 						</div>
 						<div class="gallery-navigation">
-							<img src="assets/img/arrow__right.svg" alt="Icon__arrow">
+							<img id="gallery-btn" src="assets/img/arrow__right.svg" alt="Icon__arrow">
 						</div>
 					</div>
 				</div>
@@ -289,6 +293,46 @@
 			</div>
 		</div>
 	</div>
+	<div class="footer">
+		<div class="container">
+			<div class="row row-top">
+				<div class="col-2 ">
+					<div class="logo">
+						<img src="./assets/img/logo.png" alt="" class="logo__img">
+					</div>
+				</div>
+				<div class="col-7">
+					<ul class="menu">
+						<li class="menu__item">MAIN</li>
+						<li class="menu__item">about</li>
+						<li class="menu__item">game features</li>
+						<li class="menu__item">System requirements</li>
+						<li class="menu__item">quotes</li>
+					</ul>
+				</div>
+				<div class="col-3">
+					<div class="network">
+						<a href="#" class="network__item"><i class="fab fa-facebook-f"></i></a>
+						<a href="#" class="network__item"><i class="fab fa-twitter"></i></a>
+						<a href="#" class="network__item"><i class="fab fa-youtube network__item--youtube "></i></a>
+						<a href="#" class="network__item"><i class="fab fa-twitch "></i></a>
+					</div>
+				</div>
+			</div>
+			<div class="row row-bot">
+				<div class="left-text">
+					&#169;2018 Outpost Games, Inc. All Rights Reserved
+				</div>
+				<div class="right-text">
+					<a href="">Privacy Policy</a> | <a href="">Terms of Services</a> | <a href=""> Code of Conduct</a>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	</div>
+
+	<script src="/js/app.js"></script>
 </body>
 
 </html>
